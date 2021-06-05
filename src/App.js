@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from "react";
-import EmployeeModal from "./components/Employee";
-import Search from "./components/Search";
-import getEmployees from "./utils/API";
-import Guide from "./components/Results";
+import React from 'react';
+import './App.css';
+import Navbar from './components/Navbar'
+import EmployeeMain from './components/EmployeeMain'
 
 
-function app{
-
-
-
+function App() {
+    return (
+        <div id="mainBody">
+            <Navbar />
+            <EmployeeMain />
+        </div>
+    );
 }
+
+export default App;
