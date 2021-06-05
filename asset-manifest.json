@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/CorbinGar/HW19-employee-directory/static/css/main.d1b679a2.chunk.css",
-    "main.js": "/CorbinGar/HW19-employee-directory/static/js/main.6b140ddc.chunk.js",
-    "main.js.map": "/CorbinGar/HW19-employee-directory/static/js/main.6b140ddc.chunk.js.map",
-    "runtime-main.js": "/CorbinGar/HW19-employee-directory/static/js/runtime-main.9d581e74.js",
-    "runtime-main.js.map": "/CorbinGar/HW19-employee-directory/static/js/runtime-main.9d581e74.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/CorbinGar/HW19-employee-directory/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.d485150a.chunk.js": "/CorbinGar/HW19-employee-directory/static/js/2.d485150a.chunk.js",
-    "static/js/2.d485150a.chunk.js.map": "/CorbinGar/HW19-employee-directory/static/js/2.d485150a.chunk.js.map",
-    "index.html": "/CorbinGar/HW19-employee-directory/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/CorbinGar/HW19-employee-directory/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.d1b679a2.chunk.css.map": "/CorbinGar/HW19-employee-directory/static/css/main.d1b679a2.chunk.css.map",
-    "static/js/2.d485150a.chunk.js.LICENSE.txt": "/CorbinGar/HW19-employee-directory/static/js/2.d485150a.chunk.js.LICENSE.txt"
+    "main.css": "/HW19-employee-directory/static/css/main.d1b679a2.chunk.css",
+    "main.js": "/HW19-employee-directory/static/js/main.01687b28.chunk.js",
+    "main.js.map": "/HW19-employee-directory/static/js/main.01687b28.chunk.js.map",
+    "runtime-main.js": "/HW19-employee-directory/static/js/runtime-main.2689fee6.js",
+    "runtime-main.js.map": "/HW19-employee-directory/static/js/runtime-main.2689fee6.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/HW19-employee-directory/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.b2fe6351.chunk.js": "/HW19-employee-directory/static/js/2.b2fe6351.chunk.js",
+    "static/js/2.b2fe6351.chunk.js.map": "/HW19-employee-directory/static/js/2.b2fe6351.chunk.js.map",
+    "index.html": "/HW19-employee-directory/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/HW19-employee-directory/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.d1b679a2.chunk.css.map": "/HW19-employee-directory/static/css/main.d1b679a2.chunk.css.map",
+    "static/js/2.b2fe6351.chunk.js.LICENSE.txt": "/HW19-employee-directory/static/js/2.b2fe6351.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9d581e74.js",
+    "static/js/runtime-main.2689fee6.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.d485150a.chunk.js",
+    "static/js/2.b2fe6351.chunk.js",
     "static/css/main.d1b679a2.chunk.css",
-    "static/js/main.6b140ddc.chunk.js"
+    "static/js/main.01687b28.chunk.js"
   ]
 }
