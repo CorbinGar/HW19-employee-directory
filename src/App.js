@@ -5,12 +5,12 @@ import Employee from './components/Employee'
 
 
 function App() {
-    return (
-        <div id="main">
-            <Navbar />
-            <Employee />
-        </div>
-    );
+  return (
+    <div id="mainBody">
+      <Navbar />
+      <Employee />
+      </div>
+  );
 }
 
 export default App;

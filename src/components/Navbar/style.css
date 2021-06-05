@@ -1,0 +1,23 @@
+
+
+
+
+
+.navbar {
+    
+    justify-content: center;
+}
+
+.main-header {
+    display: flex;
+    justify-content: left;
+    background-color: #161616;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    text-align: right;
+  
+}
+
