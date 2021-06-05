@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import moment from "moment";
 
-const Table = (props) => {
+const Results = (props) => {
     return (
         <div className="container">
             <table className="table empTable">
@@ -17,7 +17,6 @@ const Table = (props) => {
                 </thead>
                 <tbody>
                     {props.state.filteredEmp.map((employee) => {
-                        
                         const hireDate = moment(employee.registered.date).format("MM/DD/YYYY")
 
                         return (
@@ -33,11 +32,10 @@ const Table = (props) => {
                         )
                     }
                     )}
-
                 </tbody>
             </table>
         </div>
     );
 }
 
-export default Table;
+export default Results;

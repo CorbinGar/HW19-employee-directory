@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import Search from "../Search";
-import Table from "../Results";
+import Results from "../Results";
 import API from "../../utils/API";
 import moment from "moment";
 
@@ -128,7 +128,7 @@ class Employee extends Component {
                     handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit}
                 />
-                <Table
+                <Results
                     state={this.state}
                     filterEmp={this.filterEmp}
                     sortEmpFirst={this.sortEmpFirst}
