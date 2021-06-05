@@ -123,16 +123,11 @@ class Employee extends Component {
     render() {
         return (
             <div className="container">
-
-                <div className="container">
                 <Search
                     value={this.state.search}
                     handleInputChange={this.handleInputChange}
                     handleFormSubmit={this.handleFormSubmit}
                 />
-                </div>
-
-                <div className="container">
                 <Table
                     state={this.state}
                     filterEmp={this.filterEmp}
@@ -142,8 +137,6 @@ class Employee extends Component {
                     sortEmpEmail={this.sortEmpEmail}
                     sortEmpPhone={this.sortEmpPhone}
                     />
-                </div>
-
             </div>
         );
     }
