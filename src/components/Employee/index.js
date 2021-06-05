@@ -9,7 +9,7 @@ class EmployeeMain extends Component {
     state = {
         search: "",
         employees: [],
-        filteredEmp: [],
+        sortedEmployees: [],
     };
 
     componentDidMount() {
@@ -17,7 +17,7 @@ class EmployeeMain extends Component {
             .then((res) =>
                 this.setState({
                     employees: res.data.results,
-                    filteredEmp: res.data.results
+                    sortedEmployees: res.data.results
                 })
             )
             .catch(err => console.log(err));
@@ -26,7 +26,7 @@ class EmployeeMain extends Component {
     handleInputChange = (e) => {
         const value = e.target.value;
         this.setState({ search: value });
-        this.filterEmp(value.toLowerCase().trim());
+        this.sortedEmployees(value.toLowerCase().trim());
     }
 
     handleFormSubmit = (e) => {
@@ -36,7 +36,7 @@ class EmployeeMain extends Component {
 
     sortbylastname = (e) => {
         this.setState({
-            filteredEmp: this.state.filteredEmp.sort(
+            sortedEmployees: this.state.sortedEmployees.sort(
                 (emp1, emp2) => {
                     if (emp1.name.last < emp2.name.last) {
                         return -1
@@ -50,7 +50,7 @@ class EmployeeMain extends Component {
 
     sortbyfirstname = (e) => {
         this.setState({
-            filteredEmp: this.state.filteredEmp.sort(
+            filteredEmp: this.state.sortedEmployees.sort(
                 (emp1, emp2) => {
                     if (emp1.name.first < emp2.name.first) {
                         return -1
@@ -65,7 +65,7 @@ class EmployeeMain extends Component {
 
     sortEmpEmail = (e) => {
         this.setState({
-            filteredEmp: this.state.filteredEmp.sort(
+            sortedEmployees: this.state.sortedEmployees.sort(
                 (emp1, emp2) => {
                     if (emp1.email < emp2.email) {
                         return -1
@@ -90,6 +90,48 @@ class EmployeeMain extends Component {
             )
         })
     }
+
+
+    filter = (input) => {
+        if (input) {
+            this.setState({
+                filteredEmp: this.state.employees.filter((employee) => {
+                    return (
+                        employee.name.first.includes(input) ||
+                        employee.name.last.includes(input) ||
+                        employee.phone.includes(input) ||
+                        employee.email.includes(input) ||
+                        moment(employee.registered.date).format("MM/DD/YYYY").includes(input)
+                    );
+                }),
+            });
+        } else {
+            this.setState({ sortedEmployees: this.state.employees });
+        }
+    };
+
+    render() {
+        return (
+            <div className="container">
+                <Search
+                    value={this.state.search}
+                    handleInputChange={this.handleInputChange}
+                    handleFormSubmit={this.handleFormSubmit}
+                />
+                <Table
+                    state={this.state}
+                    filterEmp={this.filterEmp}
+                    sortEmpFirst={this.sortEmpFirst}
+                    sortEmpLast={this.sortEmpLast}
+                    sortEmpDate={this.sortEmpDate}
+                    sortEmpEmail={this.sortEmpEmail}
+                    sortEmpPhone={this.sortEmpPhone}
+
+                />
+            </div>
+        );
+    }
+
 
 }
 
