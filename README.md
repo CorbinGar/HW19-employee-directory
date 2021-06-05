@@ -26,10 +26,10 @@ I created an Employee Directory React application. The application pulls between
     
 MIT License
     
-Copyright (c) 2021 Mike Coletta
+Copyright (c) 2021 Corbin Garner
           
 ## Questions?
     
-[Github](https://github.com/MikeColetta)
+[Github](https://github.com/CorbinGar)
     
-For any questions, please send me an [email](mailto:coletta.mike@gmail.com).
+For any questions, please send me an [email](CorbinGar@gmail.com).
