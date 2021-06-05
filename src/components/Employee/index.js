@@ -62,10 +62,35 @@ class EmployeeMain extends Component {
         })
     }
 
-    sortbynamefirst
 
-    sortbynamefirst
+    sortEmpEmail = (e) => {
+        this.setState({
+            filteredEmp: this.state.filteredEmp.sort(
+                (emp1, emp2) => {
+                    if (emp1.email < emp2.email) {
+                        return -1
+                    } else if (emp1.email > emp2.email) {
+                        return 1
+                    } else { return 0 }
+                }
+            )
+        })
+    }
 
-    sortbynamefirst
+    sortEmpPhone = (e) => {
+        this.setState({
+            filteredEmp: this.state.filteredEmp.sort(
+                (emp1, emp2) => {
+                    if (emp1.phone < emp2.phone) {
+                        return -1
+                    } else if (emp1.phone > emp2.phone) {
+                        return 1
+                    } else { return 0 }
+                }
+            )
+        })
+    }
 
 }
+
+export default Employee;
