@@ -34,13 +34,33 @@ class EmployeeMain extends Component {
     }
 
 
+    sortbylastname = (e) => {
+        this.setState({
+            filteredEmp: this.state.filteredEmp.sort(
+                (emp1, emp2) => {
+                    if (emp1.name.last < emp2.name.last) {
+                        return -1
+                    } else if (emp1.name.last > emp2.name.last) {
+                        return 1
+                    } else { return 0 }
+                }
+            )
+        })
+    }
 
-
-
-
-
-    sortbynamefirst
-
+    sortbyfirstname = (e) => {
+        this.setState({
+            filteredEmp: this.state.filteredEmp.sort(
+                (emp1, emp2) => {
+                    if (emp1.name.first < emp2.name.first) {
+                        return -1
+                    } else if (emp1.name.first > emp2.name.first) {
+                        return 1
+                    } else { return 0 }
+                }
+            )
+        })
+    }
 
     sortbynamefirst
 
