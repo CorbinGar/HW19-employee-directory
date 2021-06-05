@@ -12,7 +12,7 @@ function Search(props) {
                         type="search"
                         className="form-control mt-2"
                         id="searchInput"
-                        placeholder="Filter employees!">
+                        placeholder="Search Employees">
                     </input>
                 </form>
             </div>
