@@ -15,7 +15,7 @@ This is an Employee Directory React application. The application pulls a random 
     
 ## Installation
     
-
+[Deployed Application](https://CorbinGar.github.io/HW19-employee-directory/)
     
 ## Usage
 
