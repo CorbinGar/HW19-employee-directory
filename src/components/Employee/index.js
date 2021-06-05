@@ -39,10 +39,13 @@ class EmployeeMain extends Component {
 
 
 
-    sortby
+    sortbynamefirst
 
 
+    sortbynamefirst
 
+    sortbynamefirst
 
+    sortbynamefirst
 
 }
